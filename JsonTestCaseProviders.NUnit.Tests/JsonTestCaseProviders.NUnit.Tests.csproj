@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JsonTestCaseProviders.NUnit\JsonTestCaseProviders.NUnit.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="TestCases\InputAndResults\">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Folder>
+    <Folder Include="TestCases\InputOnly\">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Folder>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="TestCases\InputOnly\0001_PassingTest.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="TestCases\InputOnly\0003_FailingTest.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,10 @@
+﻿{
+  "Categories": [
+    "Example"
+  ],
+  "Ignore": false,
+  "TestInput": {
+    "X": 1,
+    "Y": 2
+  }
+}
